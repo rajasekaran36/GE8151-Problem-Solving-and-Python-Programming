@@ -1,1 +1,1 @@
-# GE8151-Problem-Solving-and-Python-Programmig
+# GE8151-Problem-Solving-and-Python-Programming
