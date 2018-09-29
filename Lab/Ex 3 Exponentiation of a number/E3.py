@@ -1,5 +1,3 @@
-import math
-
 def power_finder(number,power):
     res = 1
     for i in range(power):
@@ -12,11 +10,14 @@ def fact_finder(number):
     else:
         return number*fact_finder(number - 1)
 
-#number = int(input("Enter any number"))
-number = 3
+print ("E^x finder")
+print ("----------")
+number = int(input("Enter any number : "))
 result = 0
 
-for i in range (100):
-    result = result + (power_finder(number,i)/fact_finder(i))
-    print(i,power_finder(number,i),fact_finder(i),result)
-print(result)
+for i in range (10):
+    power_value = power_finder(number,i)
+    fact_value = fact_finder(i)
+    current_term = power_value/fact_value
+    result = result + current_term
+print("E^",number,"value is",result)
